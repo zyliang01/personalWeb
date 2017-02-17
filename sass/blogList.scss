@@ -1,0 +1,75 @@
+@mixin hover($color){
+  a{
+    text-decoration: none;
+    color:$color;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
+body{
+  background-image:url("../images/top.jpg");
+  background-repeat: no-repeat;
+  background-color:#F4EDE3;
+  background-size:100%;
+}
+.blogTitle{
+  padding:12% 0 5% 12%;
+  h1{
+    @include hover(#000);
+    font-size: 36px;
+  }
+}
+
+.leftArea {
+  width:180px;
+  float: left;
+  h4{
+    margin:10px 0;
+  }
+  p{
+    margin:6px 0;
+    @include hover(#6B6451);
+  }
+}
+.rightArea{
+  float:right;
+  width:940px;
+  margin-top: 10px;
+}
+.clearfix:after{visibility:hidden;display:block;font-size:0;content: " ";clear:both;height:0;}
+.clearfix{*zoom:1;}
+.listBlog{
+  margin-bottom: 30px;
+  @include hover(#7E6250);
+  span{
+    font-size: 13px;
+  }
+  h3,p{
+    margin-bottom:6px;
+  }
+  p{
+    line-height:20px;
+  }
+}
+.container{
+  label{
+    text-align: center;height:32px;line-height: 32px;
+  }
+  input{
+    height:32px;
+  }
+}
+.icons{
+  margin-top:10px;
+  img{
+    padding-left:15px;
+  }
+}
+.qrcode{
+  position:absolute;
+  display:none;
+}
+.wechatIcon{
+  cursor:pointer;
+}

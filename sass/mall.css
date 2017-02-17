@@ -1,0 +1,13 @@
+@charset "UTF-8";
+.logo {
+  margin-top: 20px; }
+
+.logo {
+  float: left; }
+
+.logoZh, .logoEn {
+  color: #F90000;
+  font: bold 32px "微软雅黑";
+  margin-top: 10px; }
+
+/*# sourceMappingURL=mall.css.map */
